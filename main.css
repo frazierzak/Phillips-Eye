@@ -1,0 +1,229 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  line-height: 1.6;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container a {
+  /* display: flex; */
+  align-items: center;
+}
+
+.logo-container img {
+  max-height: 100px;
+}
+
+.header-right {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.header-buttons a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-left: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.header-schedule-online {
+  background-color: #d95334;
+  box-shadow: 3px 3px 0px #a13c26;
+}
+
+.header-schedule-online:hover {
+  background-color: #e65838;
+}
+
+.header-call {
+  background-color: #5ba5d0;
+  box-shadow: 3px 3px 0px #417796;
+}
+
+.header-call:hover {
+  background-color: #66b9e9;
+}
+
+.header-address-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-address {
+  margin-right: 10px;
+  text-align: right;
+}
+
+.header-address p {
+  margin: 0;
+}
+
+.header-big-button {
+  background-color: #1668b8;
+  padding: 5px 15px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 0px #104c89;
+}
+
+.header-big-button:hover {
+  background-color: #1975d2;
+}
+
+.header-big-button img {
+  max-height: 35px;
+}
+
+/* Hero section styles */
+
+#hero {
+  background-image: url('images/hero-background.png');
+  background-size: cover;
+  background-position: center;
+  color: #101010;
+}
+
+#hero .container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  opacity: 1;
+  width: 45%;
+}
+
+.hero-content h1 em {
+  font-weight: 600;
+}
+
+.hero-content p {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 20px;
+  width: 45%;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  z-index: 1;
+  position: relative;
+}
+
+.cta-button.schedule {
+  background-color: #d95334;
+  box-shadow: 3px 3px 0px #a53f28;
+  margin: 0 10px 0 0;
+}
+
+.cta-button.schedule:hover {
+  background-color: #e65838;
+}
+
+.cta-button.our-services {
+  background-color: #525252;
+  box-shadow: 3px 3px 0px #3d3d3d;
+}
+
+.cta-button.our-services:hover {
+  background-color: #696969;
+}
+
+#about {
+  background-color: #1668b8;
+  background-image: url('images/dr-divider-repeat.png');
+  background-repeat: repeat-x;
+  padding: 0 0 40px 0;
+}
+
+#about img {
+  margin-top: -157px;
+  margin-bottom: 20px;
+  z-index: 0;
+}
+
+#about .container {
+  color: #fff;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin: 0 0 30px 0;
+}
+
+#about p {
+  font-size: 20px;
+  text-align: left;
+  margin: 0 0 20px;
+  text-align: justify;
+  line-height: 35px;
+}
+
+#about p img {
+  margin: 0 0 30px 30px;
+  float: right;
+  width: 540px;
+  border: 8px solid #fff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px #c1c1c1;
+}
