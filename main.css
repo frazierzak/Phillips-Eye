@@ -208,6 +208,11 @@ footer a,
 
 .about-the-doc .divider {
   background-image: url('images/divider-repeat.png');
+  height: 256px;
+  margin-bottom: -100px;
+}
+
+.about-the-doc .container {
 }
 
 .content .divider img {
@@ -217,7 +222,12 @@ footer a,
 
 .content img {
   border-radius: 10px;
+
   box-shadow: 5px 5px 0px 0px #0000004c;
+}
+
+.content .container img {
+  border: 6px solid #fff;
 }
 
 .content img.float-right {
@@ -228,9 +238,6 @@ footer a,
 .content img.float-left {
   float: left;
   max-width: 550px;
-}
-
-.content .container {
 }
 
 .content .container p {
@@ -249,6 +256,32 @@ footer a,
 
 .our-services .divider {
   background-image: url('images/divider-repeat-services.png');
+}
+
+.lists-two-column {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  background-color: rgb(232, 232, 232);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.our-services ul {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+
+.our-services ul li {
+  font-weight: 700;
+  margin: 0 0 24px 32px;
+  font-size: 28px;
+  line-height: 48px;
+}
+
+.our-services ul li:last-of-type {
+  margin-bottom: 0;
 }
 
 .content .button {
