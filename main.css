@@ -222,7 +222,6 @@ footer a,
 
 .content img {
   border-radius: 10px;
-
   box-shadow: 5px 5px 0px 0px #0000004c;
 }
 
@@ -260,28 +259,46 @@ footer a,
 
 .lists-two-column {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 32px;
-  background-color: rgb(232, 232, 232);
   border-radius: 10px;
-  padding: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 0px 0px #0000004c;
 }
 
-.our-services ul {
-  width: 49%;
+.lists-two-column ul {
   display: flex;
-  flex-direction: column;
 }
 
-.our-services ul li {
+.lists-two-column ul:last-of-type {
+  margin-bottom: 0;
+}
+
+.lists-two-column ul li {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  list-style: none;
   font-weight: 700;
-  margin: 0 0 24px 32px;
+  padding: 20px 40px;
   font-size: 28px;
   line-height: 48px;
+  background-color: rgb(232, 232, 232);
+  border-right: 3px dotted #fff;
+  border-bottom: 3px dotted #fff;
+}
+
+.lists-two-column ul:nth-child(even) li {
+  background-color: rgb(216, 216, 216);
 }
 
 .our-services ul li:last-of-type {
-  margin-bottom: 0;
+  border-right: none;
+}
+
+.our-services ul:last-of-type li {
+  border-bottom: none;
 }
 
 .content .button {
