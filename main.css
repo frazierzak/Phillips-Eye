@@ -207,12 +207,9 @@ footer a,
 }
 
 .about-the-doc .divider {
-  background-image: url('images/divider-repeat.png');
-  height: 256px;
-  margin-bottom: -100px;
-}
-
-.about-the-doc .container {
+  background-image: url('images/divider-repeat-green-top.png');
+  height: 22px;
+  /* margin-bottom: -100px; */
 }
 
 .content .divider img {
@@ -254,7 +251,9 @@ footer a,
 }
 
 .our-services .divider {
-  background-image: url('images/divider-repeat-services.png');
+  background-image: url('images/divider-repeat-green-bottom.png');
+  height: 22px;
+  /* margin-bottom: -100px; */
 }
 
 .lists-two-column {
@@ -321,9 +320,6 @@ footer .container {
 
 footer .left {
   display: flex;
-}
-
-footer .right {
 }
 
 footer .right p {
