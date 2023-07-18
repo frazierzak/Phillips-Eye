@@ -391,6 +391,7 @@ footer .left {
 footer .right p {
   color: #fff;
   line-height: 25px;
+  text-align: right;
 }
 
 footer .center {
