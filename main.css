@@ -15,6 +15,46 @@ body {
   padding: 0 20px;
 }
 
+.content.green p a {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  color: #778976;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 2px 8px;
+  margin: 0 2px 0 0;
+  border-radius: 6px;
+  /* border-bottom: 4px solid rgba(255, 255, 255, 0); */
+  transition: all 0.3s ease;
+}
+
+.content.green p a:hover {
+  color: #fff;
+  background-color: #5e705c;
+  /* border-bottom: 4px solid rgb(255, 255, 255); */
+}
+
+.content.green p a .link-icon {
+  width: 22px;
+  height: 22px;
+  margin-left: 6px;
+}
+
+.content.green p a .link-icon path {
+  fill: #778976;
+  transition: fill 0.3s ease;
+}
+
+.content.green p a:hover .link-icon path {
+  fill: #fff;
+}
+
+.content.green p a span.link-address {
+  font-size: 16px;
+  margin: 0 0 0 4px;
+}
+
 .float-right {
   float: right;
   margin: 0 0 12px 32px;
@@ -29,7 +69,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
+  padding: 12px;
 }
 
 .logo {
@@ -55,7 +95,7 @@ footer a,
   border-radius: 10px;
   color: #fff;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 800;
   display: flex;
   align-items: center;
   font-size: 20px;
@@ -89,21 +129,20 @@ footer a,
   flex-direction: column;
   justify-content: space-around;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
+  background-color: rgb(216, 216, 216);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 0px #0000004c;
+  font-weight: 500;
 }
 
 .address p {
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  font-size: 20px;
-  margin-bottom: 5px;
-  letter-spacing: 1px;
-  color: #1c1c1c;
-}
-
-.address p:last-of-type {
-  margin-bottom: 0;
+  font-size: 26px;
+  color: #383c29;
 }
 
 .google-maps {
@@ -125,7 +164,7 @@ footer a,
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 0 20px 0;
+  padding: 30px 0;
 }
 
 .hero .container {
@@ -152,7 +191,7 @@ footer a,
 }
 
 .hero .text-container p em {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .hero .text-container p:last-of-type {
@@ -169,6 +208,11 @@ footer a,
   margin-right: 14px;
   background-color: #d97058;
   box-shadow: 4px 4px 0 #a53f28;
+  transition: background-color 0.3s ease;
+}
+
+.hero .buttons a:hover {
+  background-color: #f07d63;
 }
 
 .green {
@@ -192,9 +236,9 @@ footer a,
 .content .container h1 {
   font-family: 'Playfair Display', serif;
   text-align: center;
-  font-size: 48px;
+  font-size: 64px;
   margin-bottom: 24px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .content .container h2 {
@@ -324,6 +368,7 @@ footer .left {
 
 footer .right p {
   color: #fff;
+  line-height: 25px;
 }
 
 footer .center {
@@ -332,6 +377,7 @@ footer .center {
   justify-content: center;
   text-align: center;
   font-size: 14px;
+  letter-spacing: 1px;
 }
 
 footer .center a {
