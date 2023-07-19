@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -506,15 +507,17 @@ footer .center a:hover {
 
 @media (max-width: 1200px) {
   header .logo {
-    margin-bottom: 0;
+    margin-bottom: 12px;
   }
   header .buttons {
     flex-direction: column;
-    width: 100%;
+    margin-bottom: 12px;
   }
   header .buttons a {
     margin: 0 0 12px 0;
-    justify-content: center;
+  }
+  header .buttons a:last-of-type {
+    margin-bottom: 0;
   }
   .address {
     display: none;
@@ -527,6 +530,9 @@ footer .center a:hover {
   }
   .hero .text-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .hero .text-container p {
     text-align: center;
@@ -538,12 +544,18 @@ footer .center a:hover {
     flex-direction: column;
   }
   .hero .buttons a {
-    display: block;
     margin: 0 0 12px 0;
-    text-align: center;
+    justify-content: center;
   }
-  .content img.float-right {
+  .content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .float-right {
     width: 100%;
+    float: none;
+    margin: 0 0 12px 0;
   }
   .lists-two-column {
     width: 100%;
