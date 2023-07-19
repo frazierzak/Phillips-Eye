@@ -157,7 +157,7 @@ footer a,
   width: 60%;
 }
 
-.hero .text-container p {
+.hero .text-container h1 {
   font-size: 54px;
   font-family: 'Playfair Display', serif;
   margin: 0;
@@ -165,14 +165,16 @@ footer a,
   margin-bottom: 12px;
 }
 
-.hero .text-container p em {
+.hero .text-container h1 em {
   font-weight: 800;
 }
 
-.hero .text-container p:last-of-type {
+.hero .text-container h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 22px;
   line-height: 38px;
   margin-bottom: 12px;
+  font-weight: 400;
 }
 
 .hero .buttons {
