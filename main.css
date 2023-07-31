@@ -8,7 +8,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #5e6b5d;
-  background-color: #fff3e4;
+  background-color: #e1e1e1;
 }
 
 .container {
@@ -55,7 +55,7 @@ footer a,
 .button {
   padding: 10px 20px;
   border-radius: 10px;
-  color: #fff3e4;
+  color: #e1e1e1;
   text-decoration: none;
   font-weight: 800;
   display: flex;
@@ -109,7 +109,7 @@ footer a,
 }
 
 .address p {
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   text-align: center;
   text-transform: uppercase;
   font-size: 20px;
@@ -123,7 +123,7 @@ footer a,
 .google-maps {
   padding: 10px 20px;
   border-radius: 10px;
-  color: #fff3e4;
+  color: #e1e1e1;
   text-decoration: none;
   font-weight: 700;
   display: flex;
@@ -149,7 +149,11 @@ footer a,
 .hero .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.hero .image-container {
+  display: none;
 }
 
 .hero .image-container img {
@@ -175,17 +179,18 @@ footer a,
   font-size: 82px;
 }
 
-.hero .text-container h2 {
+.hero .text-container p {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   line-height: 38px;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   font-weight: 400;
   text-align: justify;
 }
 
 .hero .buttons {
   display: flex;
+  justify-content: center;
 }
 
 .hero .buttons a {
@@ -214,7 +219,7 @@ section {
   position: relative;
   left: 0px;
   float: left;
-  background-color: #fff3e4;
+  background-color: #e1e1e1;
 }
 
 .editorial.flipped {
@@ -280,18 +285,18 @@ section {
 
 .green {
   background-color: #778976;
-  /* border-top: 11px solid #fff3e4; */
-  /* border-bottom: 11px solid #fff3e4; */
+  /* border-top: 11px solid #e1e1e1; */
+  /* border-bottom: 11px solid #e1e1e1; */
 }
 
 .white {
-  background-color: #fff3e4;
+  background-color: #e1e1e1;
   /* border-top: 11px solid #778976; */
   /* border-bottom: 11px solid #778976; */
 }
 
 .green .container {
-  color: #fff3e4;
+  color: #e1e1e1;
 }
 
 .green p a {
@@ -299,7 +304,7 @@ section {
   align-items: center;
   font-weight: 500;
   color: #778976;
-  background-color: #fff3e4;
+  background-color: #e1e1e1;
   text-decoration: none;
   padding: 2px 8px;
   margin: 0 2px 0 0;
@@ -308,7 +313,7 @@ section {
 }
 
 .green p a:hover {
-  color: #fff3e4;
+  color: #e1e1e1;
   background-color: #5e705c;
 }
 
@@ -324,7 +329,7 @@ section {
 }
 
 .green p a:hover .link-icon path {
-  fill: #fff3e4;
+  fill: #e1e1e1;
 }
 
 .green p a span.link-address {
@@ -362,7 +367,7 @@ section {
 }
 
 .green .container {
-  color: #fff3e4;
+  color: #e1e1e1;
 }
 
 .content img {
@@ -496,7 +501,7 @@ footer .center a {
   display: inline-flex;
   align-items: center;
   font-weight: 500;
-  color: #fff3e4;
+  color: #e1e1e1;
   background-color: #a53f28;
   text-decoration: none;
   padding: 4px 6px;
@@ -512,7 +517,7 @@ footer .center a svg {
 }
 
 footer .center a svg path {
-  fill: #fff3e4;
+  fill: #e1e1e1;
 }
 
 footer .center a:hover {
