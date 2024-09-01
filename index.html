@@ -3,564 +3,642 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Phillips Eye - Ophthalmologist - Brandon Phillips, M.D.</title>
-    <meta
-      name="description"
-      content="Dr. Brandon Phillips is an ophthalmologist providing exceptional eye care services in Fayetteville, NC. Visit us for comprehensive eye exams, medical treatments, and more."
-    />
-    <meta
-      name="keywords"
-      content="ophthalmologist, eye disease, eye dr, eye treatment, eye md, general ophthalmologist, dry eye, blepharitis, meibomian gland dysfunction, rosacea, Optilight, IPL, ResurFX, skin resurfacing, glaucoma, macular degeneration, phillips eye care, eye ophthalmologist, eye care, eye exams, medical treatments, Fayetteville, North Carolina"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Phillips Eye</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,800;1,500;1,800&family=Playfair+Display:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Phillips Eye",
-        "url": "http://phillipseyefayetteville.com/",
-        "logo": "http://phillipseyefayetteville.com/images/logo.svg"
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap");
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Merriweather", serif;
       }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Dr. Brandon Phillips",
-        "jobTitle": "Ophthalmologist",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Phillips Eye"
-        },
-        "telephone": "(910) 930-0704",
-        "email": "",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "1212 Walter Reed Road",
-          "addressLocality": "Fayetteville",
-          "addressRegion": "NC",
-          "postalCode": "28304",
-          "addressCountry": "US"
-        }
+      body {
+        font-family: "Open Sans", sans-serif;
       }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "http://phillipseyefayetteville.com/index.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "About Us",
-            "item": "http://phillipseyefayetteville.com/index.html#about-us"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Our Services",
-            "item": "http://phillipseyefayetteville.com/index.html#our-services"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Location",
-            "item": "http://phillipseyefayetteville.com/index.html#our-location"
-          }
-        ]
+      html {
+        font-size: 18px;
       }
-    </script>
+      body {
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+      h1,
+      .h1 {
+        font-size: 2.5rem;
+      }
+      h2,
+      .h2 {
+        font-size: 2rem;
+      }
+      h3,
+      .h3 {
+        font-size: 1.75rem;
+      }
+      h4,
+      .h4 {
+        font-size: 1.5rem;
+      }
+      h5,
+      .h5 {
+        font-size: 1.25rem;
+      }
+      .btn {
+        font-size: 1.1rem;
+      }
+      .navbar-nav .nav-link {
+        font-size: 1.2rem;
+      }
+      .about-the-doc,
+      .our-location {
+        background-color: #e9ecef;
+      }
+      .blur-image {
+        filter: blur(0px);
+        transition: filter 0.3s;
+      }
+      .blur-image:hover {
+        filter: blur(5px);
+      }
+      .navbar-brand img {
+        height: 100px;
+      }
+      .nav-buttons {
+        justify-content: center;
+      }
+      .about-the-doc,
+      .our-location {
+        background-color: #485a6a;
+        color: #f8f9fa;
+      }
+      .about-the-doc p a,
+      .our-location p a {
+        color: #f8f9fa;
+      }
+      .about-the-doc p a:hover,
+      .our-location p a:hover {
+        color: #485a6a;
+        background-color: #f8f9fa;
+        text-decoration: none;
+      }
+      .our-location .card {
+        background-color: #f8f9fa;
+        color: #485a6a;
+      }
+      .our-location .card p a {
+        color: #485a6a;
+      }
+      .our-location .card p a:hover {
+        color: #f8f9fa;
+        background-color: #485a6a;
+        text-decoration: none;
+      }
+      .our-services {
+        background-color: #f8f9fa;
+        color: #485a6a;
+      }
+      .navbar-brand img {
+        height: 160px;
+      }
+      .nav-buttons {
+        justify-content: center;
+      }
+      .btn {
+        border-width: 4px;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+      .btn-outline-primary {
+        color: #485a6a;
+        border-color: #485a6a;
+      }
+      .btn-outline-primary:hover {
+        color: #fff;
+        background-color: #485a6a;
+        border-color: #485a6a;
+      }
+      .btn-primary {
+        color: #f8f9fa;
+        background-color: #485a6a;
+        border-color: #485a6a;
+      }
+      .btn-primary:hover {
+        color: #485a6a;
+        background-color: #f8f9fa;
+        border-color: #485a6a;
+      }
+      .navbar-toggler {
+        background-color: #485a6a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: none !important;
+        border: 4px solid #485a6a;
+        transition: all 0.3s ease-in-out;
+      }
+      .navbar-toggler:hover {
+        background-color: #f8f9fa;
+      }
+      .navbar-toggler i {
+        font-size: 1.5em;
+        color: #f8f9fa;
+      }
+      .navbar-toggler:hover i {
+        color: #485a6a;
+      }
+      p a {
+        color: #485a6a;
+        font-weight: bold;
+      }
+      p a:hover {
+        color: #f8f9fa;
+        background-color: #485a6a;
+        text-decoration: none;
+      }
+      .hero {
+        color: #485a6a;
+      }
+      .custom-list {
+        background-color: #485a6a;
+        color: #f8f9fa;
+      }
+      .custom-list li {
+        padding: 1em;
+        border-bottom: 1px solid #e0e0e0;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        transition: background-color 0.3s ease;
+      }
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+      .custom-list li:last-child {
+        border-bottom: none;
+      }
+
+      .custom-list li:hover {
+        background-color: #758b9e;
+      }
+
+      .custom-list svg {
+        width: 25px;
+      }
+      iframe {
+        border: 2px solid #485a6a;
+        border-radius: 10px;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <a class="logo" href="index.html"
-        ><img src="images/logo.svg" alt="Phillips Eye Logo"
-      /></a>
-      <div class="buttons">
-        <!-- <a class="schedule-button" href="#"
-          ><span class="icon-container">
-            <img src="images/schedule-icon.png" alt="Schedule Online" /> </span
-          >Schedule Now</a
-        > -->
-        <a class="call-button" href="tel:19109300704"
-          ><span class="icon-container">
-            <img src="images/call-icon.png" alt="Call us" /> </span
-          >(910) 930-0704</a
-        >
-        <a
-          class="google-maps"
-          href="https://goo.gl/maps/pAcZD7PAeGp2Yncs9"
-          target="_blank"
-          ><span class="icon-container">
-            <img src="images/google-map-button.png" alt="Google Maps" /> </span
-          >Google Maps</a
-        >
-
-        <a class="email-us" href="mailto:contact@phillipseyefayetteville.com"
-          ><span class="icon-container">
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill="#96A9B2"
-                d="M511.824 425.007c1.941-5.245-220.916-173.519-220.916-173.519c-27.9-20.589-42.574-20.913-70.164 0c0 0-222.532 168.138-220.659 173.311l-.045.038c.023.045.06.076.091.117a48.482 48.482 0 0 0 8.119 14.157c1.473 1.786 3.248 3.282 4.955 4.837l-.083.064c.136.121.317.177.453.298c7.235 6.454 16.359 10.634 26.495 11.827c.159.019.287.102.446.121h.612c1.541.147 3.006.517 4.584.517h420.721c20.717 0 38.269-13.028 45.241-31.291c.083-.136.211-.234.287-.374l-.137-.103z"
-              />
-              <path
-                fill="#B9C5C6"
-                d="M256.133 232.176L1.216 423.364V152.515c0-26.4 21.397-47.797 47.797-47.797h414.24c26.4 0 47.797 21.397 47.797 47.797v270.849L256.133 232.176z"
-              />
-              <path
-                fill="#EDECE6"
-                d="m4.189 135.896l217.645 170.949c27.47 20.271 41.918 20.591 69.083 0L508.22 136.167c-3.77-6.834-9.414-12.233-15.869-16.538l2.989-2.342c-7.295-6.641-16.62-10.946-26.971-12.058l-424.455.015c-10.322 1.097-19.662 5.417-26.942 12.043l2.967 2.313c-6.38 4.245-11.972 9.551-15.75 16.296z"
-              />
-              <path
-                fill="#DCE2E2"
-                d="M4.118 136.254C2.207 141.419 221.63 307.099 221.63 307.099c27.47 20.271 41.918 20.591 69.083 0c0 0 219.103-165.546 217.258-170.64l.045-.037c-.022-.045-.059-.074-.089-.115a47.732 47.732 0 0 0-7.994-13.939c-1.45-1.759-3.198-3.231-4.878-4.763l.082-.063c-.134-.119-.312-.175-.446-.294c-7.124-6.354-16.107-10.47-26.086-11.645c-.156-.019-.283-.1-.439-.119h-.602c-1.517-.145-2.96-.509-4.514-.509H48.81c-20.398 0-37.68 12.828-44.543 30.809c-.082.134-.208.231-.283.368l.134.102z"
-              />
-              <path
-                fill="#597B91"
-                d="M291.401 154.645h-38.632a6.155 6.155 0 0 0-6.155 6.155v21.722a6.155 6.155 0 0 0 6.155 6.155h31.415a6.155 6.155 0 0 1 6.155 6.155v11.616a6.155 6.155 0 0 1-6.155 6.155h-31.415a6.155 6.155 0 0 0-6.155 6.155v23.578a6.155 6.155 0 0 0 6.155 6.155h41.316a6.155 6.155 0 0 1 6.155 6.155v12.441a6.155 6.155 0 0 1-6.155 6.155h-75.76a6.155 6.155 0 0 1-6.155-6.155V136.461a6.155 6.155 0 0 1 6.155-6.155h74.81c3.749 0 6.627 3.322 6.092 7.033l-1.733 12.028a6.156 6.156 0 0 1-6.093 5.278z"
-              />
-            </svg> </span
-          >Email Us</a
-        >
-
-        <a
-          class="facebook"
-          href="https://www.facebook.com/profile.php?id=61550212874537"
-          ><svg
-            width="512"
-            height="512"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill="#e1e1e1"
-              d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
-            /></svg
-        ></a>
-
-        <a class="instagram" href="https://www.instagram.com/phillipseyefay"
-          ><svg
-            width="512"
-            height="512"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill="#e1e1e1"
-              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
-            /></svg
-        ></a>
-      </div>
-      <div class="address">
-        <p>1212 Walter Reed Road</p>
-        <p>Fayetteville, NC 28304</p>
+    <header class="bg-light pt-3">
+      <div class="container text-center">
+        <a class="navbar-brand mb-4 d-block" href="index.html">
+          <img
+            src="images/logo2.svg"
+            alt="Phillips Eye Logo"
+            class="img-fluid"
+          />
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <div class="navbar-collapse justify-content-center" id="navbarNav">
+              <div class="nav-buttons d-flex flex-wrap justify-content-center">
+                <a href="tel:19109300704" class="btn btn-outline-primary m-1">
+                  <i class="fas fa-phone-alt"></i> (910) 930-0704
+                </a>
+                <a
+                  href="https://goo.gl/maps/pAcZD7PAeGp2Yncs9"
+                  target="_blank"
+                  class="btn btn-outline-primary m-1"
+                >
+                  <i class="fas fa-map-marker-alt"></i> Google Maps
+                </a>
+                <a
+                  href="mailto:contact@phillipseyefayetteville.com"
+                  class="btn btn-outline-primary m-1"
+                >
+                  <i class="fas fa-envelope"></i> Email Us
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61550212874537"
+                  class="btn btn-outline-primary m-1"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/phillipseyefay"
+                  class="btn btn-outline-primary m-1"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
 
-    <section class="hero">
+    <section class="hero py-5">
       <div class="container">
-        <div class="text-container">
-          <h1>
-            <em>See</em> the difference with <strong>hometown care</strong>.
-          </h1>
-          <p>
-            <strong>Dr. Phillips</strong> has been treating the eyes of
-            Fayetteville, Dunn, Lumberton, Raeford, Southern Pines and greater
-            Moore, Hoke, Sampson, and Cumberland counties for
-            <strong>more than a decade</strong>. Let his experience help you
-            <strong>see more clearly</strong>.
-          </p>
-          <div class="buttons">
-            <a href="#about-us">About Us</a>
-            <a href="#our-services">Our Services</a>
-            <a href="optilight.html">OptiLight</a>
-            <a href="#our-location">Location</a>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-container">
+              <h1 class="mb-4 text-center">
+                <em>See</em> the difference with <br/><strong>hometown care</strong>.
+              </h1>
+              <p class="mb-4 text-center">
+                <strong>Dr. Phillips</strong> has been treating the eyes of
+                Fayetteville, Dunn, Lumberton, Raeford, Southern Pines and
+                greater Moore, Hoke, Sampson, and Cumberland counties for
+                <strong>more than a decade</strong>. Let his experience help you
+                <strong>see more clearly</strong>.
+              </p>
+              <div
+                class="buttons d-flex justify-content-center align-items-center flex-wrap gap-2"
+              >
+                <a
+                  href="#about-us"
+                  class="btn btn-primary btn-lg text-nowrap align-items-center d-flex"
+                  >About Us</a
+                >
+                <a
+                  href="#our-services"
+                  class="btn btn-primary btn-lg text-nowrap align-items-center d-flex"
+                  >Our Services</a
+                >
+                <a
+                  href="optilight.html"
+                  class="btn btn-primary btn-lg text-nowrap align-items-center d-flex"
+                  >OptiLight</a
+                >
+                <a
+                  href="#our-location"
+                  class="btn btn-primary btn-lg text-nowrap align-items-center d-flex"
+                  >Location</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <svg
-      class="editorial"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28 "
-      preserveAspectRatio="none"
-    >
-      <defs>
-        <path
-          id="gentle-wave4"
-          d="M-160 44c30 0 
-    58-18 88-18s
-    58 18 88 18 
-    58-18 88-18 
-    58 18 88 18
-    v44h-352z"
-        />
-      </defs>
-      <g class="parallax1">
-        <use xlink:href="#gentle-wave4" x="50" y="3" fill="#849683" />
-      </g>
-      <g class="parallax2">
-        <use xlink:href="#gentle-wave4" x="50" y="0" fill="#91a590" />
-      </g>
-      <g class="parallax3">
-        <use xlink:href="#gentle-wave4" x="50" y="9" fill="#a8bca7" />
-      </g>
-      <g class="parallax4">
-        <use xlink:href="#gentle-wave4" x="50" y="6" fill="#778976" />
-      </g>
-    </svg>
-
-    <section class="content green about-the-doc" id="about-us">
+    <section id="about-us" class="about-the-doc py-5">
       <div class="container">
-        <h1>About Us</h1>
-        <img
-          class="float-right blur-image"
-          alt="Picture of Dr. Brandon Phillips"
-          src="images/dr-brandon-phillips.png"
-        />
-        <p>
-          Dr. Phillips is a general ophthalmologist whose specialty is
-          <strong>medical diseases of the eye</strong>.
-        </p>
-        <p>
-          He received his medical degree from the
-          <strong>Medical College of Wisconsin</strong>
-          and completed internship and residency at
-          <strong>Walter Reed National Military Medical Center</strong>. He is
-          certified by the American Board of Ophthalmology and is a member of
-          the American Academy of Ophthalmology.
-        </p>
-        <p>
-          <strong
-            >Dr. Phillips was born and raised in the Fayetteville area.</strong
-          >
-          After his medical education and
-          <strong>12 years of military service</strong>, he came home to take
-          care of the town that has given him so much.
-        </p>
-        <p>
-          Dr. Phillips and his wife, also a Fayetteville native, have four
-          children. He currently serves on the
-          <strong>Board of Trustees at Fayetteville State University</strong>.
-        </p>
-
-        <p>
-          In his spare time, he enjoys coaching his son's baseball team,
-          strength training and reading.
-        </p>
-      </div>
-    </section>
-
-    <svg
-      class="editorial flipped"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28 "
-      preserveAspectRatio="none"
-    >
-      <defs>
-        <path
-          id="gentle-wave"
-          d="M-160 44c30 0 
-    58-18 88-18s
-    58 18 88 18 
-    58-18 88-18 
-    58 18 88 18
-    v44h-352z"
-        />
-      </defs>
-      <g class="parallax1">
-        <use xlink:href="#gentle-wave" x="50" y="3" fill="#849683" />
-      </g>
-      <g class="parallax2">
-        <use xlink:href="#gentle-wave" x="50" y="0" fill="#91a590" />
-      </g>
-      <g class="parallax3">
-        <use xlink:href="#gentle-wave" x="50" y="9" fill="#a8bca7" />
-      </g>
-      <g class="parallax4">
-        <use xlink:href="#gentle-wave" x="50" y="6" fill="#778976" />
-      </g>
-    </svg>
-
-    <section class="content white our-services" id="our-services">
-      <div class="container">
-        <h1>What You Can Expect</h1>
-        <img
-          class="float-right blur-image"
-          alt="Eye Chart image"
-          src="images/eye-treatment.png"
-        />
-        <p>
-          At Phillips Eye, you will receive exceptional one-on-one care. To us,
-          that means a treatment plan tailored to your lifestyle, a wide range
-          of options for <strong>healthy eyes</strong>, minimal waiting, and
-          time to talk with Dr. Phillips about your concerns.
-        </p>
-        <h2>Services</h2>
-        <p>
-          <strong
-            >Dr. Phillips's specialty is the medical treatment of eyes.</strong
-          >
-          From routine care to comprehensive management of complex eye disease,
-          his passion is your care and comfort. In addition to a wealth of
-          experience, Dr. Phillips offers
-          <strong>state-of-the-art diagnostic and treatment equipment</strong>,
-          including cutting-edge
-          <a
-            href="https://lumenis.com/vision/products/optilight/#risks-and-warning"
-            target="_blank"
-            >OptiLight
-            <svg
-              version="1.1"
-              class="link-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 512 512"
-              enable-background="new 0 0 512 512"
-              xml:space="preserve"
-            >
-              <path
-                fill="#010101"
-                d="M459.654,233.373l-90.531,90.5c-49.969,50-131.031,50-181,0c-7.875-7.844-14.031-16.688-19.438-25.813  l42.063-42.063c2-2.016,4.469-3.172,6.828-4.531c2.906,9.938,7.984,19.344,15.797,27.156c24.953,24.969,65.563,24.938,90.5,0  l90.5-90.5c24.969-24.969,24.969-65.563,0-90.516c-24.938-24.953-65.531-24.953-90.5,0l-32.188,32.219  c-26.109-10.172-54.25-12.906-81.641-8.891l68.578-68.578c50-49.984,131.031-49.984,181.031,0  C509.623,102.342,509.623,183.389,459.654,233.373z M220.326,382.186l-32.203,32.219c-24.953,24.938-65.563,24.938-90.516,0  c-24.953-24.969-24.953-65.563,0-90.531l90.516-90.5c24.969-24.969,65.547-24.969,90.5,0c7.797,7.797,12.875,17.203,15.813,27.125  c2.375-1.375,4.813-2.5,6.813-4.5l42.063-42.047c-5.375-9.156-11.563-17.969-19.438-25.828c-49.969-49.984-131.031-49.984-181.016,0  l-90.5,90.5c-49.984,50-49.984,131.031,0,181.031c49.984,49.969,131.031,49.969,181.016,0l68.594-68.594  C274.561,395.092,246.42,392.342,220.326,382.186z"
-              />
-            </svg>
-          </a>
-          intense pulsed light therapy (IPL) with Optimal Pulse Technology (OPT)
-          and
-          <a
-            href="https://lumenis.com/aesthetics/products/m22/resurfx/"
-            target="_blank"
-            >ResurFX
-            <svg
-              version="1.1"
-              class="link-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 512 512"
-              enable-background="new 0 0 512 512"
-              xml:space="preserve"
-            >
-              <path
-                fill="#010101"
-                d="M459.654,233.373l-90.531,90.5c-49.969,50-131.031,50-181,0c-7.875-7.844-14.031-16.688-19.438-25.813  l42.063-42.063c2-2.016,4.469-3.172,6.828-4.531c2.906,9.938,7.984,19.344,15.797,27.156c24.953,24.969,65.563,24.938,90.5,0  l90.5-90.5c24.969-24.969,24.969-65.563,0-90.516c-24.938-24.953-65.531-24.953-90.5,0l-32.188,32.219  c-26.109-10.172-54.25-12.906-81.641-8.891l68.578-68.578c50-49.984,131.031-49.984,181.031,0  C509.623,102.342,509.623,183.389,459.654,233.373z M220.326,382.186l-32.203,32.219c-24.953,24.938-65.563,24.938-90.516,0  c-24.953-24.969-24.953-65.563,0-90.531l90.516-90.5c24.969-24.969,65.547-24.969,90.5,0c7.797,7.797,12.875,17.203,15.813,27.125  c2.375-1.375,4.813-2.5,6.813-4.5l42.063-42.047c-5.375-9.156-11.563-17.969-19.438-25.828c-49.969-49.984-131.031-49.984-181.016,0  l-90.5,90.5c-49.984,50-49.984,131.031,0,181.031c49.984,49.969,131.031,49.969,181.016,0l68.594-68.594  C274.561,395.092,246.42,392.342,220.326,382.186z"
-              />
-            </svg>
-          </a>
-          fractional non-ablative skin resurfacing laser.
-        </p>
-        <p>Most commonly, patients visit Dr. Phillips for management of:</p>
-        <div class="lists-two-column">
-          <ul>
-            <li>Dry eye syndrome</li>
-            <li>Glaucoma</li>
-          </ul>
-          <ul>
-            <li>Blepharitis and Meibomian gland dysfunction (MGD)</li>
-            <li>Complications of diabetes</li>
-          </ul>
-          <ul>
-            <li>Rosacea and telangiectasias</li>
-            <li>Macular degeneration</li>
-          </ul>
-          <ul>
-            <li>Hyperpigmentation and acne scarring</li>
-            <li>Allergies</li>
-          </ul>
+        <h2 class="mb-4 text-center">About Us</h2>
+        <div class="row">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img
+              src="images/dr-brandon-phillips-new.png"
+              alt="Picture of Dr. Brandon Phillips"
+              class="img-fluid rounded w-100 h-100 object-fit-cover"
+            />
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content">
+              <p>
+                Dr. Phillips is a general ophthalmologist whose specialty is
+                <strong>medical diseases of the eye</strong>.
+              </p>
+              <p>
+                He received his medical degree from the
+                <strong>Medical College of Wisconsin</strong> and completed
+                internship and residency at
+                <strong>Walter Reed National Military Medical Center</strong>.
+                He is certified by the American Board of Ophthalmology and is a
+                member of the American Academy of Ophthalmology.
+              </p>
+              <p>
+                <strong
+                  >Dr. Phillips was born and raised in the Fayetteville
+                  area.</strong
+                >
+                After his medical education and
+                <strong>12 years of military service</strong>, he came home to
+                take care of the town that has given him so much.
+              </p>
+              <p>
+                Dr. Phillips and his wife, also a Fayetteville native, have four
+                children. He currently serves on the
+                <strong
+                  >Board of Trustees at Fayetteville State University</strong
+                >.
+              </p>
+              <p>
+                In his spare time, he enjoys coaching his son's baseball team,
+                strength training and reading.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <svg
-      class="editorial"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28 "
-      preserveAspectRatio="none"
-    >
-      <defs>
-        <path
-          id="gentle-wave2"
-          d="M-160 44c30 0 
-    58-18 88-18s
-    58 18 88 18 
-    58-18 88-18 
-    58 18 88 18
-    v44h-352z"
-        />
-      </defs>
-      <g class="parallax1">
-        <use xlink:href="#gentle-wave2" x="50" y="3" fill="#849683" />
-      </g>
-      <g class="parallax2">
-        <use xlink:href="#gentle-wave2" x="50" y="0" fill="#91a590" />
-      </g>
-      <g class="parallax3">
-        <use xlink:href="#gentle-wave2" x="50" y="9" fill="#a8bca7" />
-      </g>
-      <g class="parallax4">
-        <use xlink:href="#gentle-wave2" x="50" y="6" fill="#778976" />
-      </g>
-    </svg>
-
-    <section class="content green our-location" id="our-location">
+    <section id="our-services" class="our-services py-5">
       <div class="container">
-        <h1>Location</h1>
-        <div class="content-float">
-          <div class="left">
+        <div class="row h-100 mb-4">
+          <h2 class="mb-4">What You Can Expect</h2>
+
+          <div class="col-xl-6 d-flex flex-column">
             <p>
-              <img
-                class="center blur-image"
-                src="images/practice.png"
-                alt="Pic of Building"
-              />
+              At Phillips Eye, you will receive exceptional one-on-one care. To
+              us, that means a wide range of treatment options tailored to your
+              lifestyle, minimal waiting, and time to talk with Dr. Phillips
+              about your concerns.
             </p>
+
+            <h3>Services</h3>
+            <p>
+              <strong
+                >Dr. Phillips's specialty is the medical treatment of
+                eyes.</strong
+              >
+              From dry, irritated eyes to the comprehensive management of
+              complex eye disease, his passion is your care and comfort. In
+              addition to a wealth of experience, Dr. Phillips offers
+              <strong
+                >state-of-the-art diagnostic and treatment equipment</strong
+              >, including cutting-edge
+              <a
+                href="https://lumenis.com/vision/products/optilight/#risks-and-warning"
+                target="_blank"
+                >OptiLight</a
+              >
+              intense pulsed light therapy (IPL) with Optimal Pulse Technology
+              (OPT) and
+              <a
+                href="https://lumenis.com/aesthetics/products/m22/resurfx/"
+                target="_blank"
+                >ResurFX</a
+              >
+              fractional non-ablative skin resurfacing laser.
+            </p>
+          </div>
+          <div class="col-xl-6 d-flex align-items-center">
+            <div class="h-100 w-100">
+              <img
+                src="images/eye-treatment.png"
+                alt="Eye Chart image"
+                class="img-fluid rounded w-100 h-100 object-fit-cover"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <h3 class="mb-3">
+              Most commonly, patients visit Dr. Phillips for management of:
+            </h3>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col d-flex">
+                <ul
+                  class="list-unstyled custom-list rounded-3 w-100 d-flex flex-column"
+                >
+                  <li class="flex-grow-1 d-flex align-items-center">
+                    <div class="d-flex w-100">
+                      <div class="flex-shrink-0 me-3 align-items-center d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-check-circle-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="flex-grow-1 text-start">Red eyes</div>
+                    </div>
+                  </li>
+                  <li class="flex-grow-1 d-flex align-items-center">
+                    <div class="d-flex w-100">
+                      <div class="flex-shrink-0 me-3 align-items-center d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-check-circle-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="flex-grow-1 text-start">Dry eye syndrome</div>
+                    </div>
+                  </li>
+                  <li class="flex-grow-1 d-flex align-items-center">
+                    <div class="d-flex w-100">
+                      <div class="flex-shrink-0 me-3 align-items-center d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-check-circle-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="flex-grow-1 text-start">
+                        Blepharitis and Meibomian gland dysfunction (MGD)
+                      </div>
+                    </div>
+                  </li>
+                  <li class="flex-grow-1 d-flex align-items-center">
+                    <div class="d-flex w-100">
+                      <div class="flex-shrink-0 me-3 align-items-center d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-check-circle-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="flex-grow-1 text-start">
+                        Rosacea and hyperpigmentation
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col d-flex">
+                <ul
+                  class="list-unstyled custom-list rounded-3 w-100 d-flex flex-column"
+                >
+                  <li class="flex-grow-1 d-flex align-items-center">
+                    <div class="d-flex w-100">
+                      <div class="flex-shrink-0 me-3 align-items-center d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-check-circle-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="flex-grow-1 text-start">Glaucoma</div>
+                    </div>
+                  </li>
+                  <li class="flex-grow-1 d-flex align-items-center">
+                    <div class="d-flex w-100">
+                      <div class="flex-shrink-0 me-3 align-items-center d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-check-circle-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="flex-grow-1 text-start">
+                        Complications of diabetes
+                      </div>
+                    </div>
+                  </li>
+                  <li class="flex-grow-1 d-flex align-items-center">
+                    <div class="d-flex w-100">
+                      <div class="flex-shrink-0 me-3 align-items-center d-flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-check-circle-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="flex-grow-1 text-start">
+                        Macular degeneration
+                      </div>
+                    </div>
+                  </li>
+                  <li class="flex-grow-1 d-flex align-items-center">
+                    <div class="d-flex w-100">
+                      <div class="flex-shrink-0 me-3 align-items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-check-circle-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="flex-grow-1 text-start">Allergies</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-location" class="our-location py-5">
+      <div class="container">
+        <h2 class="mb-4">Location</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="images/practice.png"
+              alt="Pic of Building"
+              class="img-fluid rounded mb-3"
+            />
             <p>
               Phillips Eye is conveniently located in the heart of
               Fayetteville's healthcare district at
-              <a href="https://goo.gl/maps/TPKFEWVN8LRMJTTS9" target="_blank">
-                Walter Reed Road<svg
-                  version="1.1"
-                  class="link-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 512 512"
-                  enable-background="new 0 0 512 512"
-                  xml:space="preserve"
-                >
-                  <path
-                    fill="#010101"
-                    d="M459.654,233.373l-90.531,90.5c-49.969,50-131.031,50-181,0c-7.875-7.844-14.031-16.688-19.438-25.813  l42.063-42.063c2-2.016,4.469-3.172,6.828-4.531c2.906,9.938,7.984,19.344,15.797,27.156c24.953,24.969,65.563,24.938,90.5,0  l90.5-90.5c24.969-24.969,24.969-65.563,0-90.516c-24.938-24.953-65.531-24.953-90.5,0l-32.188,32.219  c-26.109-10.172-54.25-12.906-81.641-8.891l68.578-68.578c50-49.984,131.031-49.984,181.031,0  C509.623,102.342,509.623,183.389,459.654,233.373z M220.326,382.186l-32.203,32.219c-24.953,24.938-65.563,24.938-90.516,0  c-24.953-24.969-24.953-65.563,0-90.531l90.516-90.5c24.969-24.969,65.547-24.969,90.5,0c7.797,7.797,12.875,17.203,15.813,27.125  c2.375-1.375,4.813-2.5,6.813-4.5l42.063-42.047c-5.375-9.156-11.563-17.969-19.438-25.828c-49.969-49.984-131.031-49.984-181.016,0  l-90.5,90.5c-49.984,50-49.984,131.031,0,181.031c49.984,49.969,131.031,49.969,181.016,0l68.594-68.594  C274.561,395.092,246.42,392.342,220.326,382.186z"
-                  /></svg></a
+              <a href="https://goo.gl/maps/TPKFEWVN8LRMJTTS9" target="_blank"
+                >Walter Reed Road</a
               >, adjacent to the campus of
               <strong>Cape Fear Valley Medical Center</strong>.
             </p>
           </div>
-          <div class="right">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d208724.23776770174!2d-78.9507367!3d35.1736704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ab134136a55555%3A0x163d9fb84076706!2sDr.%20Brandon%20Phillips!5e0!3m2!1sen!2sus!4v1692206155571!5m2!1sen!2sus"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Contact Information</h5>
+                <p class="card-text">
+                  <strong>Phone:</strong>
+                  <a href="tel:19109300704">(910) 930-0704</a><br />
+                  <strong>Address:</strong> 1212 Walter Reed Road, Fayetteville,
+                  NC 28304
+                </p>
+                <a href="tel:19109300704" class="btn btn-primary me-2 mb-2">
+                  <i class="fas fa-phone-alt"></i> Call Us
+                </a>
+                <a
+                  href="https://goo.gl/maps/EAcm7v2ADUm86bVG9"
+                  class="btn btn-outline-primary mb-2"
+                >
+                  <i class="fas fa-map-marker-alt"></i> Google Maps
+                </a>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d208724.23776770174!2d-78.9507367!3d35.1736704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ab134136a55555%3A0x163d9fb84076706!2sDr.%20Brandon%20Phillips!5e0!3m2!1sen!2sus!4v1724620777924!5m2!1sen!2sus"
+                  class="w-100 mt-2"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <svg
-      class="editorial flipped"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28 "
-      preserveAspectRatio="none"
-    >
-      <defs>
-        <path
-          id="gentle-wave3"
-          d="M-160 44c30 0 
-    58-18 88-18s
-    58 18 88 18 
-    58-18 88-18 
-    58 18 88 18
-    v44h-352z"
-        />
-      </defs>
-      <g class="parallax1">
-        <use xlink:href="#gentle-wave3" x="50" y="3" fill="#849683" />
-      </g>
-      <g class="parallax2">
-        <use xlink:href="#gentle-wave3" x="50" y="0" fill="#91a590" />
-      </g>
-      <g class="parallax3">
-        <use xlink:href="#gentle-wave3" x="50" y="9" fill="#a8bca7" />
-      </g>
-      <g class="parallax4">
-        <use xlink:href="#gentle-wave3" x="50" y="6" fill="#778976" />
-      </g>
-    </svg>
-
-    <footer>
-      <div class="container">
-        <div class="left">
-          <a class="call-button" href="tel:19109300704"
-            ><span class="icon-container">
-              <img src="images/call-icon.png" alt="Call us" /> </span
-            >(910) 930-0704</a
+    <footer class="bg-light py-4">
+      <div class="container text-center">
+        <p>
+          Website by
+          <a href="https://frazierzak.github.io/portfolio/" target="_blank"
+            >Zak Frazier</a
           >
-          <a class="google-maps" href="https://goo.gl/maps/EAcm7v2ADUm86bVG9"
-            ><span class="icon-container">
-              <img
-                src="images/google-map-button.png"
-                alt="Google Maps"
-              /> </span
-            >Google Maps</a
-          >
-        </div>
-        <div class="right">
-          <p>(910) 930-0704</p>
-          <p>1212 Walter Reed Road</p>
-          <p>Fayetteville, NC 28304</p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="center">
-          <p class="credit">
-            Website by
-            <a href="https://frazierzak.github.io/portfolio/"
-              >Zak Frazier<svg
-                version="1.1"
-                class="link-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 512 512"
-                enable-background="new 0 0 512 512"
-                xml:space="preserve"
-              >
-                <path
-                  fill="#010101"
-                  d="M459.654,233.373l-90.531,90.5c-49.969,50-131.031,50-181,0c-7.875-7.844-14.031-16.688-19.438-25.813  l42.063-42.063c2-2.016,4.469-3.172,6.828-4.531c2.906,9.938,7.984,19.344,15.797,27.156c24.953,24.969,65.563,24.938,90.5,0  l90.5-90.5c24.969-24.969,24.969-65.563,0-90.516c-24.938-24.953-65.531-24.953-90.5,0l-32.188,32.219  c-26.109-10.172-54.25-12.906-81.641-8.891l68.578-68.578c50-49.984,131.031-49.984,181.031,0  C509.623,102.342,509.623,183.389,459.654,233.373z M220.326,382.186l-32.203,32.219c-24.953,24.938-65.563,24.938-90.516,0  c-24.953-24.969-24.953-65.563,0-90.531l90.516-90.5c24.969-24.969,65.547-24.969,90.5,0c7.797,7.797,12.875,17.203,15.813,27.125  c2.375-1.375,4.813-2.5,6.813-4.5l42.063-42.047c-5.375-9.156-11.563-17.969-19.438-25.828c-49.969-49.984-131.031-49.984-181.016,0  l-90.5,90.5c-49.984,50-49.984,131.031,0,181.031c49.984,49.969,131.031,49.969,181.016,0l68.594-68.594  C274.561,395.092,246.42,392.342,220.326,382.186z"
-                /></svg
-            ></a>
-          </p>
-        </div>
+        </p>
       </div>
     </footer>
-    <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
